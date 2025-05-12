@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import AgentSidebar from './components/aiagent/AgentSidebar';
-import FlowCanvas from './components/aiagent/FlowCanvas';
-import './components/aiagent/styles.css';
+import AgentSidebar from './aiagent/AgentSidebar';
+import FlowCanvas from './aiagent/FlowCanvas';
+import './aiagent/styles.css';
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 

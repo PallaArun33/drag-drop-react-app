@@ -1,0 +1,82 @@
+.app {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.canvas {
+  flex: 1;
+  height: 100vh;
+  background: #f8f9fa;
+  position: relative;
+}
+
+/* Remove any conflicting styles */
+.sidebar {
+  display: none;
+}
+
+.ai-agent-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.shape-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.shape-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border-radius: 4px;
+  cursor: move;
+  transition: background-color 0.2s;
+}
+
+.shape-item:hover {
+  background-color: #e8e8e8;
+}
+
+.shape-icon {
+  font-size: 24px;
+}
+
+.draggable-shape-container {
+  position: absolute;
+  cursor: move;
+}
+
+.shape {
+  border: 2px solid #333;
+  transition: transform 0.2s;
+}
+
+.shape:hover {
+  transform: scale(1.02);
+}
+
+.delete-button {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.draggable-shape-container:hover .delete-button {
+  opacity: 1;
+}
+
+/* Tooltip styles */
+.tooltip {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.tooltip.show {
+  opacity: 1;
+} 
